@@ -1,0 +1,163 @@
+
+
+drop-chance:
+
+  PLAYER: 0.01
+
+  ALLAY: 0.001
+  AXOLOTL:
+    BLUE: 0.001
+    CYAN: 0.001
+    GOLD: 0.001
+    LUCY: 0.001
+    WILD: 0.001
+  BAT: 0.001
+  BEE: 0.001
+  BLAZE: 0.001
+  CAT:
+    ALL_BLACK: 0.001
+    BLACK: 0.001
+    BRITISH_SHORTHAIR: 0.001
+    CALICO: 0.001
+    JELLIE: 0.001
+    PERSIAN: 0.001
+    RAGDOLL: 0.001
+    RED: 0.001
+    SIAMESE: 0.001
+    TABBY: 0.001
+    WHITE: 0.001
+  CAVE_SPIDER: 0.001
+  CHICKEN: 0.001
+  COD: 0.001
+  COW: 0.001
+  #Creeper Heads are left out handled by the vanilla method of obtaining.
+  DOLPHIN: 0.001
+  DONKEY: 0.001
+  DROWNED: 0.001
+  ELDER_GUARDIAN: 0.001
+  #Ender Dragon Heads are left out to be handled by the vanilla method of obtaining.
+  ENDERMAN: 0.001
+  ENDERMITE: 0.001
+  EVOKER: 0.001
+  FOX:
+    RED: 0.001
+    SNOW: 0.001
+  FROG:
+    COLD: 0.001
+    TEMPERATE: 0.001
+    WARM: 0.001
+  GHAST: 0.001
+  #Giants left out of plugin
+  GLOW_SQUID: 0.001
+  GOAT: 0.001
+  GUARDIAN: 0.001
+  HOGLIN: 0.001
+  HORSE:
+    BLACK: 0.001
+    BROWN: 0.001
+    CHESTNUT: 0.001
+    CREAMY: 0.001
+    DARK_BROWN: 0.001
+    GRAY: 0.001
+    WHITE: 0.001
+  HUSK: 0.001
+  ILLUSIONER: 0.001
+  IRON_GOLEM: 0.001
+  LLAMA:
+    BROWN: 0.001
+    CREAMY: 0.001
+    GRAY: 0.001
+    WHITE: 0.001
+  MAGMA_CUBE: 0.001
+  MULE: 0.001
+  MUSHROOM_COW:
+    BROWN: 0.001
+    RED: 0.001
+  OCELOT: 0.001
+  PANDA:
+    #Black panda represents all varients except "brown"
+    BLACK: 0.001
+    BROWN: 0.001
+  PARROT:
+    BLUE: 0.001
+    CYAN: 0.001
+    GRAY: 0.001
+    GREEN: 0.001
+    RED: 0.001
+  PHANTOM: 0.001
+  PIG: 0.001
+  PIGLIN: 0.001
+  PIGLIN_BRUTE: 0.001
+  PILLAGER: 0.001
+  POLAR_BEAR: 0.001
+  PUFFERFISH: 0.001
+  RABBIT:
+    BLACK: 0.001
+    BLACK_AND_WHITE: 0.001
+    BROWN: 0.001
+    GOLD: 0.001
+    SALT_AND_PEPPER: 0.001
+    THE_KILLER_BUNNY: 0.001
+    WHITE: 0.001
+    TOAST: 0.001
+  RAVAGER: 0.001
+  SALMON: 0.001
+  SHEEP:
+    BLACK: 0.001
+    BLUE: 0.001
+    BROWN: 0.001
+    CYAN: 0.001
+    GRAY: 0.001
+    GREEN: 0.001
+    LIGHT_BLUE: 0.001
+    LIGHT_GRAY: 0.001
+    LIME: 0.001
+    MAGENTA: 0.001
+    ORANGE: 0.001
+    PINK: 0.001
+    PURPLE: 0.001
+    RED: 0.001
+    WHITE: 0.001
+    YELLOW: 0.001
+    JEB_: 0.001
+  SHULKER: 0.001
+  SILVERFISH: 0.001
+  #Skeleton Heads are left out handled by the vanilla method of obtaining.
+  SKELETON_HORSE: 0.001
+  SLIME: 0.001
+  SNOWMAN: 0.001
+  SPIDER: 0.001
+  SQUID: 0.001
+  STRAY: 0.001
+  STRIDER:
+    WARM: 0.001
+    COLD: 0.001
+  TADPOLE: 0.001
+  TRADER_LLAMA:
+    BROWN: 0.001
+    CREAMY: 0.001
+    GRAY: 0.001
+    WHITE: 0.001
+  TROPICAL_FISH: 0.001
+  TURTLE: 0.001
+  VEX: 0.001
+  VILLAGER:
+    DESERT: 0.001
+    JUNGLE: 0.001
+    PLAINS: 0.001
+    SAVANNA: 0.001
+    SNOW: 0.001
+    SWAMP: 0.001
+    TAIGA: 0.001
+  VINDICATOR: 0.001
+  WANDERING_TRADER: 0.01
+  WARDEN: 0.001
+  WITCH: 0.001
+  WITHER: 0.001
+  #Wither Skeleton Heads are left out handled by the vanilla method of obtaining.
+  WOLF: 0.001
+  ZOGLIN: 0.001
+  #Zombie Heads are left out handled by the vanilla method of obtaining.
+  ZOMBIE_HORSE: 0.001
+  ZOMBIE_VILLAGER: 0.001
+  ZOMBIFIED_PIGLIN: 0.001
