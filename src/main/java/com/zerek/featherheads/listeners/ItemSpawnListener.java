@@ -13,7 +13,6 @@ import org.bukkit.inventory.meta.SkullMeta;
 
 import java.util.Base64;
 import java.util.Collections;
-import java.util.Objects;
 
 public class ItemSpawnListener implements Listener {
 

@@ -85,8 +85,10 @@ public class EntityDeathListener implements Listener {
                     break;
             }
 
-            if (!entityType.equals("PLAYER") && plugin.getChanceUtility().rollForDrop(entityType, looting, isAxe, isSword))
+            if (!entityType.equals("PLAYER") && plugin.getChanceUtility().rollForDrop(entityType, looting, isAxe, isSword)) {
                 event.getDrops().add(plugin.getHeadUtility().makeMobHead(entityType));
+                plugin.getLogger().info(killer.getName() + " beheaded a " + entityType);
+            }
         }
     }
 }
