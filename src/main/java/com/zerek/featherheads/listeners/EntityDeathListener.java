@@ -26,7 +26,7 @@ public class EntityDeathListener implements Listener {
 
         String entityType = String.valueOf(event.getEntityType());
 
-        if (event.getEntity().getKiller() != null && (entityType.equals("PLAYER") || plugin.getTextureUtility().getEntityTypes().contains(entityType))) {
+        if (event.getEntity().getKiller() != null) {
 
             Player killer = event.getEntity().getKiller();
             boolean isAxe = axes.contains(killer.getInventory().getItemInMainHand().getType());

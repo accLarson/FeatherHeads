@@ -75,7 +75,7 @@ drop-chance:
     RED: 0.001
   OCELOT: 0.001
   PANDA:
-    #Black panda represents all varients except "brown"
+    #Black panda represents all variants except "brown"
     BLACK: 0.001
     BROWN: 0.001
   PARROT:
