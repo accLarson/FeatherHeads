@@ -83,9 +83,17 @@ public class EntityDeathListener implements Listener {
                 case "VILLAGER":
                     entityType = entityType + "-" + ((Villager) event.getEntity()).getVillagerType();
                     break;
+                case "CREEPER":
+                case "ENDER_DRAGON":
+                case "GIANT":
+                case "SKELETON":
+                case "WITHER_SKELETON":
+                case "ZOMBIE":
+                    entityType = "VANILLA";
+                    break;
             }
 
-            if (!entityType.equals("PLAYER") && plugin.getChanceUtility().rollForDrop(entityType, looting, isAxe, isSword)) {
+            if (!entityType.equals("VANILLA") && !entityType.equals("PLAYER") && plugin.getChanceUtility().rollForDrop(entityType, looting, isAxe, isSword)) {
                 event.getDrops().add(plugin.getHeadUtility().makeMobHead(entityType));
                 plugin.getLogger().info(killer.getName() + " beheaded a " + entityType);
             }
