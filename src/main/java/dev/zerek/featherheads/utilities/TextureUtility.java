@@ -1,6 +1,6 @@
-package com.zerek.featherheads.utilities;
+package dev.zerek.featherheads.utilities;
 
-import com.zerek.featherheads.FeatherHeads;
+import dev.zerek.featherheads.FeatherHeads;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 

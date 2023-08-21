@@ -1,6 +1,6 @@
-package com.zerek.featherheads.commands;
+package dev.zerek.featherheads.commands;
 
-import com.zerek.featherheads.FeatherHeads;
+import dev.zerek.featherheads.FeatherHeads;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;

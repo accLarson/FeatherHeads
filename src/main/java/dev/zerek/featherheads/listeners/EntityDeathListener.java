@@ -1,6 +1,6 @@
-package com.zerek.featherheads.listeners;
+package dev.zerek.featherheads.listeners;
 
-import com.zerek.featherheads.FeatherHeads;
+import dev.zerek.featherheads.FeatherHeads;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.*;

@@ -1,7 +1,7 @@
-package com.zerek.featherheads.commands;
+package dev.zerek.featherheads.commands;
 
-import com.zerek.featherheads.FeatherHeads;
-import com.zerek.featherheads.utilities.HeadUtility;
+import dev.zerek.featherheads.FeatherHeads;
+import dev.zerek.featherheads.utilities.HeadUtility;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

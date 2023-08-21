@@ -1,8 +1,8 @@
-package com.zerek.featherheads.listeners;
+package dev.zerek.featherheads.listeners;
 
 import com.destroystokyo.paper.profile.PlayerProfile;
 import com.destroystokyo.paper.profile.ProfileProperty;
-import com.zerek.featherheads.FeatherHeads;
+import dev.zerek.featherheads.FeatherHeads;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;

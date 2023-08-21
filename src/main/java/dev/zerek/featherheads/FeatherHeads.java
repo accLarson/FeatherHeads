@@ -1,12 +1,12 @@
-package com.zerek.featherheads;
+package dev.zerek.featherheads;
 
-import com.zerek.featherheads.commands.HeadCommand;
-import com.zerek.featherheads.commands.HeadTabCompleter;
-import com.zerek.featherheads.listeners.EntityDeathListener;
-import com.zerek.featherheads.listeners.ItemSpawnListener;
-import com.zerek.featherheads.utilities.ChanceUtility;
-import com.zerek.featherheads.utilities.HeadUtility;
-import com.zerek.featherheads.utilities.TextureUtility;
+import dev.zerek.featherheads.commands.HeadCommand;
+import dev.zerek.featherheads.commands.HeadTabCompleter;
+import dev.zerek.featherheads.listeners.EntityDeathListener;
+import dev.zerek.featherheads.listeners.ItemSpawnListener;
+import dev.zerek.featherheads.utilities.ChanceUtility;
+import dev.zerek.featherheads.utilities.HeadUtility;
+import dev.zerek.featherheads.utilities.TextureUtility;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
