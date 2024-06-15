@@ -1,7 +1,7 @@
 name: FeatherHeads
 version: '${project.version}'
 main: dev.zerek.featherheads.FeatherHeads
-api-version: 1.19
+api-version: 1.20
 authors: [ Zerek ]
 description: Adds mob and player head drops when killed
 commands:

@@ -43,18 +43,20 @@ public class HeadUtility {
 
     public ItemStack makeMobHead(String entityType) {
 
+        TextureUtility tu = plugin.getTextureUtility();
+
         ItemStack headStack = new ItemStack(Material.PLAYER_HEAD, 1);
 
         SkullMeta skullMeta = (SkullMeta) headStack.getItemMeta();
 
-        PlayerProfile skullProfile = plugin.getServer().createProfile(plugin.getTextureUtility().getUUID(entityType), plugin.getTextureUtility().getName(entityType));
+        PlayerProfile skullProfile = plugin.getServer().createProfile(tu.getUUID(entityType), tu.getName(entityType));
 
-        skullProfile.getProperties().add(new ProfileProperty("textures", plugin.getTextureUtility().getTextures(entityType)));
-        skullProfile.getProperties().add(new ProfileProperty("display", plugin.getTextureUtility().getName(entityType)));
+        skullProfile.getProperties().add(new ProfileProperty("textures", tu.getTextures(entityType)));
+        skullProfile.getProperties().add(new ProfileProperty("display", tu.getName(entityType)));
 
         skullMeta.setPlayerProfile(skullProfile);
 
-        skullMeta.lore(Collections.singletonList(Component.text("Verified: " + plugin.getTextureUtility().getName(entityType))));
+        skullMeta.lore(Collections.singletonList(Component.text("Verified: " + tu.getName(entityType))));
 
         headStack.setItemMeta(skullMeta);
 

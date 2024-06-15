@@ -31,7 +31,7 @@ public class EntityDeathListener implements Listener {
             Player killer = event.getEntity().getKiller();
             boolean isAxe = axes.contains(killer.getInventory().getItemInMainHand().getType());
             boolean isSword = swords.contains(killer.getInventory().getItemInMainHand().getType());
-            double looting = killer.getInventory().getItemInMainHand().getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS);
+            double looting = killer.getInventory().getItemInMainHand().getEnchantmentLevel(Enchantment.LOOTING);
 
             switch (entityType) {
                 case "PLAYER":
