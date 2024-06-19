@@ -18,7 +18,7 @@ public class HeadTabCompleter implements TabCompleter {
 
     public HeadTabCompleter(FeatherHeads plugin) {
         this.plugin = plugin;
-        this.entityTypeList = new ArrayList<>(plugin.getTextureUtility().getEntityTypes());
+        this.entityTypeList = new ArrayList<>(plugin.getHeadDataManager().getHeadDataArray().keySet());
     }
 
     @Override
