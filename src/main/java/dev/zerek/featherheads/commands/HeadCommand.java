@@ -29,12 +29,12 @@ public class HeadCommand implements CommandExecutor {
 
             else if (args.length == 2 && args[0].equals("player") ) {
 
-                if (!((Player) sender).getInventory().addItem(plugin.getHeadUtility().makePlayerHead(args[1])).isEmpty()) sender.sendMessage("No space in your inventory.");
+                if (!((Player) sender).getInventory().addItem(plugin.getHeadUtility().createSkull(args[1])).isEmpty()) sender.sendMessage("No space in your inventory.");
             }
 
-            else if (args.length == 2 && args[0].equals("mob") && plugin.getHeadDataManager().getHeadDataArray().containsKey(args[1].toUpperCase())) {
+            else if (args.length == 2 && args[0].equals("mob") && plugin.getHeadDataManager().getHeadDataMap().containsKey(args[1].toUpperCase())) {
 
-                if (!((Player) sender).getInventory().addItem(plugin.getHeadUtility().makeMobHead(args[1].toUpperCase())).isEmpty()) sender.sendMessage("No space in your inventory.");
+                if (!((Player) sender).getInventory().addItem(plugin.getHeadUtility().createSkull(args[1].toUpperCase())).isEmpty()) sender.sendMessage("No space in your inventory.");
 
             }
         }
