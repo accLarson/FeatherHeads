@@ -59,7 +59,7 @@ public class HeadUtility {
             profile.getProperties().add(new ProfileProperty("display", name));
             profile.getProperties().add(new ProfileProperty("verified", entityType));
             meta.setPlayerProfile(profile);
-            meta.lore(Collections.singletonList(MiniMessage.miniMessage().deserialize("<GOLD>Verified: " + entityType)));
+            meta.lore(Collections.singletonList(MiniMessage.miniMessage().deserialize("<GOLD>Verified: " + entityType.toUpperCase())));
 
         } else {
             meta.setOwningPlayer(Bukkit.getOfflinePlayer(entityType));

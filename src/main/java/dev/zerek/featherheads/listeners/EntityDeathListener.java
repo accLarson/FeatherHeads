@@ -76,6 +76,12 @@ public class EntityDeathListener implements Listener {
                         entityType = entityType + "_UNEMPLOYED";
                     else entityType = entityType + "_" + ((Villager) event.getEntity()).getProfession();
                     break;
+                case "ZOMBIE_VILLAGER":
+                    if (((ZombieVillager) event.getEntity()).getVillagerProfession().equals(Villager.Profession.NONE))
+                        entityType = entityType + "_UNEMPLOYED";
+                    else entityType = entityType + "_" + ((ZombieVillager) event.getEntity()).getVillagerProfession();
+                    break;
+
                 case "CREEPER":
                 case "ENDER_DRAGON":
                 case "GIANT":
