@@ -1,6 +1,7 @@
 package dev.zerek.featherheads.listeners;
 
 import dev.zerek.featherheads.FeatherHeads;
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Material;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
@@ -32,7 +33,7 @@ public class EntityDeathListener implements Listener {
                 case "PLAYER":
                     if (plugin.getChanceUtility().rollForDrop()) {
                         plugin.getLogger().info(killer.getName() + " beheaded " + event.getEntity().getName());
-
+                        plugin.getServer().sendMessage(MiniMessage.miniMessage().deserialize("<#e2b492>" + killer.getName() + " <#b98863>beheaded <#e2b492>" + event.getEntity().getName() + "<#b98863>!"));
                         event.getDrops().add(plugin.getHeadUtility().createSkull(event.getEntity().getName()));
                     }
                     break;
