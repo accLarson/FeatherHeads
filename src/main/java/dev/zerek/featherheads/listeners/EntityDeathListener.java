@@ -30,8 +30,11 @@ public class EntityDeathListener implements Listener {
 
             switch (entityType) {
                 case "PLAYER":
-                    if (plugin.getChanceUtility().rollForDrop())
+                    if (plugin.getChanceUtility().rollForDrop()) {
+                        plugin.getLogger().info(killer.getName() + " beheaded " + event.getEntity().getName());
+
                         event.getDrops().add(plugin.getHeadUtility().createSkull(event.getEntity().getName()));
+                    }
                     break;
                 case "AXOLOTL":
                     entityType = entityType + "_" + ((Axolotl) event.getEntity()).getVariant();
