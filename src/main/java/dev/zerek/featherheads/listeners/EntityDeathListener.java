@@ -23,8 +23,7 @@ public class EntityDeathListener implements Listener {
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event){
 
-
-        if (event.getEntity().getKiller() != null && axes.contains(event.getEntity().getKiller().getInventory().getItemInMainHand().getType())) {
+        if (event.getEntity().getKiller() != null && axes.contains(event.getEntity().getKiller().getInventory().getItemInMainHand().getType()) && event.getEntity().getKiller().hasPermission("feather.heads.behead")) {
 
             Player killer = event.getEntity().getKiller();
             String entityType = String.valueOf(event.getEntityType());
