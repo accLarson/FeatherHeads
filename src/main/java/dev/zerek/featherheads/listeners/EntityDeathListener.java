@@ -39,6 +39,9 @@ public class EntityDeathListener implements Listener {
                 case "AXOLOTL":
                     entityType = entityType + "_" + ((Axolotl) event.getEntity()).getVariant();
                     break;
+                case "COW":
+                    entityType = entityType + "_" + ((Cow) event.getEntity()).getVariant();
+                    break;
                 case "CAT":
                     entityType = entityType + "_" + ((Cat) event.getEntity()).getCatType();
                     break;
@@ -73,6 +76,9 @@ public class EntityDeathListener implements Listener {
                     break;
                 case "TRADER_LLAMA":
                     entityType = entityType + "_" + ((TraderLlama) event.getEntity()).getColor();
+                    break;
+                case "WOLF":
+                    entityType = entityType + "_" + ((Wolf) event.getEntity()).getVariant();
                     break;
                 case "VILLAGER":
                     if (((Villager) event.getEntity()).getProfession().equals(Villager.Profession.NONE))
