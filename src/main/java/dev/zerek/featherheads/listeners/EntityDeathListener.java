@@ -39,8 +39,11 @@ public class EntityDeathListener implements Listener {
                 case "AXOLOTL":
                     entityType = entityType + "_" + ((Axolotl) event.getEntity()).getVariant();
                     break;
+                case "CHICKEN":
+                    entityType = entityType + "_" + ((Chicken) event.getEntity()).getVariant().getKey().value().toUpperCase();
+                    break;
                 case "COW":
-                    entityType = entityType + "_" + ((Cow) event.getEntity()).getVariant();
+                    entityType = entityType + "_" + ((Cow) event.getEntity()).getVariant().getKey().value().toUpperCase();
                     break;
                 case "CAT":
                     entityType = entityType + "_" + ((Cat) event.getEntity()).getCatType();
@@ -57,7 +60,7 @@ public class EntityDeathListener implements Listener {
                 case "LLAMA":
                     entityType = entityType + "_" + ((Llama) event.getEntity()).getColor();
                     break;
-                case "MUSHROOM_COW":
+                case "MOOSHROOM":
                     entityType = entityType + "_" + ((MushroomCow) event.getEntity()).getVariant();
                     break;
                 case "PANDA":
@@ -67,6 +70,9 @@ public class EntityDeathListener implements Listener {
                     break;
                 case "PARROT":
                     entityType = entityType + "_" + ((Parrot) event.getEntity()).getVariant();
+                    break;
+                case "PIG":
+                    entityType = entityType + "_" + ((Pig) event.getEntity()).getVariant().getKey().value().toUpperCase();
                     break;
                 case "RABBIT":
                     entityType = entityType + "_" + ((Rabbit) event.getEntity()).getRabbitType();
@@ -78,7 +84,7 @@ public class EntityDeathListener implements Listener {
                     entityType = entityType + "_" + ((TraderLlama) event.getEntity()).getColor();
                     break;
                 case "WOLF":
-                    entityType = entityType + "_" + ((Wolf) event.getEntity()).getVariant();
+                    entityType = entityType + "_" + ((Wolf) event.getEntity()).getVariant().getKey().value().toUpperCase();
                     break;
                 case "VILLAGER":
                     if (((Villager) event.getEntity()).getProfession().equals(Villager.Profession.NONE))
@@ -108,16 +114,3 @@ public class EntityDeathListener implements Listener {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
