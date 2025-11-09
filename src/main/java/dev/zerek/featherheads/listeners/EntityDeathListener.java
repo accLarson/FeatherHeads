@@ -42,6 +42,9 @@ public class EntityDeathListener implements Listener {
                 case "CHICKEN":
                     entityType = entityType + "_" + ((Chicken) event.getEntity()).getVariant().getKey().value().toUpperCase();
                     break;
+                case "COPPER_GOLEM":
+                    entityType = entityType + "_" + ((CopperGolem) event.getEntity()).getWeatheringState();
+                    break;
                 case "COW":
                     entityType = entityType + "_" + ((Cow) event.getEntity()).getVariant().getKey().value().toUpperCase();
                     break;
